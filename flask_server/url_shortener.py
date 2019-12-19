@@ -18,6 +18,12 @@ def url_valid(url):
     return re.match(regex, url) is not None
 
 
+def _generate_url_hash_base64(url):
+    url_hash = blake2b(str.encode(url), digest_size=DIGEST_SIZE)
+    b64 = b64encode(url_hash.digest(), altchars=b'-_')
+    return b64.decode('utf-8')
+
+
 def shorten(url):
     """Shortens a url by generating a 9 byte hash, and then
     converting it to a 12 character long base 64 url friendly string.
@@ -26,14 +32,12 @@ def shorten(url):
     Return values:
     String, the unique shortened url, acting as a key for the entered long url.
     """
-    url_hash = blake2b(str.encode(url), digest_size=DIGEST_SIZE)
-
+    url_hash = _generate_url_hash_base64(url)
     while url_hash in shortened:
-        url += str(random.randint(0, 9))
-        url_hash = blake2b(str.encode(url), digest_size=DIGEST_SIZE)
+        url += str(random.randint(0, 9)) # adding entropy
+        url_hash = _generate_url_hash_base64(url)
 
-    b64 = b64encode(url_hash.digest(), altchars=b'-_')
-    return b64.decode('utf-8')
+    return url_hash
 
 
 def bad_request(message):

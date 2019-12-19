@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73c1670b-6113-45aa-9fac-97f23be5c3bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topological_sort/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topological_sort/alien_dictionary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_server/url_shortener.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_server/url_shortener.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.alien_dictionary">
+  <component name="RunManager" selected="Python.url_shortener">
     <configuration name="alien_dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="general" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,22 +191,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/flask_server/url_shortener.py</url>
-          <line>28</line>
+          <line>34</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/flask_server/url_shortener.py</url>
-          <line>62</line>
+          <line>66</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/flask_server/url_shortener.py</url>
-          <line>103</line>
+          <line>107</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/flask_server/url_shortener.py</url>
-          <line>91</line>
+          <line>95</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -245,6 +243,16 @@
           <url>file://$PROJECT_DIR$/topological_sort/alien_dictionary.py</url>
           <line>14</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/flask_server/url_shortener.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/flask_server/url_shortener.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
